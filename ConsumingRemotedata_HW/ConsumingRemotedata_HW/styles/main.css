@@ -1,0 +1,24 @@
+﻿body, header, h1, article, section, h3, label, input, a, footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+li a {
+    float: right;
+    margin-right: 25px;
+}
+
+.error_box {
+    background-color: red;
+}

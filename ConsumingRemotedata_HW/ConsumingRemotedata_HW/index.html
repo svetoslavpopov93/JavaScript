@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Books</title>
+    <link href="styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Books API</h1>
+    </header>
+    <article>
+        <section>
+            <h3>Add new books:</h3>
+            <label for="tb_new_book_name">Name:</label>
+            <input type="text" id="tb_new_book_name" />
+            <label for="tb_new_book_author">Author:</label>
+            <input type="text" id="tb_new_book_author" />
+            <label for="tb_new_book_isbn">ISBN:</label>
+            <input type="text" id="tb_new_book_isbn" />
+            <a id="btn_add">Add Book</a>
+        </section>
+        <section>
+            <a id="btn_listBooks">Refresh books</a>
+            <ol id="ol_books"></ol>
+        </section>
+    </article>
+    <footer>Books API © 2014. All rights reserved.</footer>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
