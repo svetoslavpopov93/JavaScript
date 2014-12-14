@@ -1,0 +1,5 @@
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\JSApps_Exam\test\bin\test.dll
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\JSApps_Exam\test\bin\test.pdb
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\JSApps_Exam\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\JSApps_Exam\test\obj\Debug\test.dll
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\JSApps_Exam\test\obj\Debug\test.pdb

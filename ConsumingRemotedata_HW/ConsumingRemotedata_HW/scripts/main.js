@@ -1,5 +1,6 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="jquery.js" />
+
 (function () {
     var APP_ID = "iXM4oT8oP2O1zbhBo4Bxj76Q0rjlXoJpvarcfMiY";
     var REST_API_KEY = "LrdH0g9pWcNQVmrvR1vP8YKXKu2kp9B1VcAHiSni";

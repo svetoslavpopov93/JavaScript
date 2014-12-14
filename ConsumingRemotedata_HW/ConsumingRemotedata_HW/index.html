@@ -1,31 +1,760 @@
-п»ї<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Books</title>
-    <link href="styles/main.css" rel="stylesheet" />
-</head>
-<body>
-    <header>
-        <h1>Books API</h1>
-    </header>
-    <article>
-        <section>
-            <h3>Add new books:</h3>
-            <label for="tb_new_book_name">Name:</label>
-            <input type="text" id="tb_new_book_name" />
-            <label for="tb_new_book_author">Author:</label>
-            <input type="text" id="tb_new_book_author" />
-            <label for="tb_new_book_isbn">ISBN:</label>
-            <input type="text" id="tb_new_book_isbn" />
-            <a id="btn_add">Add Book</a>
-        </section>
-        <section>
-            <a id="btn_listBooks">Refresh books</a>
-            <ol id="ol_books"></ol>
-        </section>
-    </article>
-    <footer>Books API В© 2014. All rights reserved.</footer>
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/main.js"></script>
-</body>
+
+
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>www.government.bg.</title>
+<link rel="alternate" type="application/rss+xml"  href="/cgi-bin/e-cms/rss.pl?ch=0001" title="Новини">
+<link rel="alternate" type="application/rss+xml"  href="/cgi-bin/e-cms/rss.pl?ch=0003" title="Събития">
+<link rel="alternate" type="application/rss+xml"  href="/cgi-bin/e-cms/rss.pl?ch=0004" title="Решения">
+
+	<link rel="stylesheet" href="/fce/001/css.css" type="text/css">
+<script src="/fce/001/js.js"></script>
+
+	
+	
+	
+<!-- c1418473538.72456c -->
+
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0>  
+<TABLE cellSpacing=7 cellPadding=0 width="100%" bgColor=#ededed border=0>
+<TBODY>
+<TR>
+<TD vAlign=top>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top noWrap width=184 bgColor=#08368a>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+    <TR bgcolor=#1f1919> 
+      <TD height=24 vAlign=center bgcolor="#08368A"><IMG height=12  hspace=5 src='/fce/001/tmpl/bigimg/red_arrow.gif' width=12 align=absMiddle border=0><A style='COLOR: #ffffff;TEXT-TRANSFORM: uppercase;  FONT-FAMILY: verdana; TEXT-DECORATION: none;font-size:9px;' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0223&g="><STRONG> 
+        Премиер</STRONG></A></TD>
+      <TD width="12" vAlign=center bgcolor=#08368A> <img height=12  src='/fce/001/tmpl/bigimg/trans.gif' width=12 align=absMiddle border=0></TD>
+    </TR>
+    <TR> 
+      <TD height=2 vAlign=center bgColor=#ededed colspan=2><IMG src="/fce/001/tmpl/bigimg/trans.gif" border=0></TD>
+        </TR>
+  </TBODY>
+</TABLE>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+    <TR bgcolor=#1f1919> 
+      <TD height=24 vAlign=center bgcolor="#08368A"><IMG height=12  hspace=5 src='/fce/001/tmpl/bigimg/trans.gif'; width=12 align=absMiddle border=0><A style='COLOR: #ffffff;TEXT-TRANSFORM: uppercase;  FONT-FAMILY: verdana; TEXT-DECORATION: none;font-size:9px;' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0218&g="><STRONG> 
+        Правителство</STRONG></A></TD>
+      <TD width="12" vAlign=center bgcolor=#08368A> <img height=12  hspace=5 src='/fce/001/tmpl/bigimg/pink_arrow.gif' width=12 align=align=absMiddle border=0></TD>
+    </TR>
+    <TR> 
+      <TD height=2 vAlign=center bgColor=#ededed colspan=2><IMG src="/fce/001/tmpl/bigimg/trans.gif" border=0></TD>
+        </TR>
+  </TBODY>
+</TABLE>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+    <TR bgcolor=#1f1919> 
+      <TD height=24 vAlign=center bgcolor="#08368A"><IMG height=12  hspace=5 src='/fce/001/tmpl/bigimg/yellow_arrow.gif' width=12 align=absMiddle border=0><A style='COLOR: #ffffff;TEXT-TRANSFORM: uppercase;  FONT-FAMILY: verdana; TEXT-DECORATION: none;font-size:9px;' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0222&g="><STRONG> 
+        Информация</STRONG></A></TD>
+      <TD width="12" vAlign=center bgcolor=#08368A> <img height=12  src='/fce/001/tmpl/bigimg/trans.gif' width=12 align=absMiddle border=0></TD>
+    </TR>
+    <TR> 
+      <TD height=2 vAlign=center bgColor=#ededed colspan=2><IMG src="/fce/001/tmpl/bigimg/trans.gif" border=0></TD>
+        </TR>
+  </TBODY>
+</TABLE>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+    <TR bgcolor=#1f1919> 
+      <TD height=24 vAlign=center bgcolor="#08368A"><IMG height=12  hspace=5 src='/fce/001/tmpl/bigimg/green_arrow.gif' width=12 align=absMiddle border=0><A style='COLOR: #ffffff;TEXT-TRANSFORM: uppercase;  FONT-FAMILY: verdana; TEXT-DECORATION: none;font-size:9px;' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0226&g="><STRONG> 
+        Документи</STRONG></A></TD>
+      <TD width="12" vAlign=center bgcolor=#08368A> <img height=12  src='/fce/001/tmpl/bigimg/trans.gif' width=12 align=absMiddle border=0></TD>
+    </TR>
+    <TR> 
+      <TD height=2 vAlign=center bgColor=#ededed colspan=2><IMG src="/fce/001/tmpl/bigimg/trans.gif" border=0></TD>
+        </TR>
+  </TBODY>
+</TABLE>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+    <TR bgcolor=#1f1919> 
+      <TD height=24 vAlign=center bgcolor="#08368A"><IMG height=12  hspace=5 src='/fce/001/tmpl/bigimg/blue_arrow.gif' width=12 align=absMiddle border=0><A style='COLOR: #ffffff;TEXT-TRANSFORM: uppercase;  FONT-FAMILY: verdana; TEXT-DECORATION: none;font-size:9px;' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0237&g="><STRONG> 
+        Връзки</STRONG></A></TD>
+      <TD width="12" vAlign=center bgcolor=#08368A> <img height=12  src='/fce/001/tmpl/bigimg/trans.gif' width=12 align=absMiddle border=0></TD>
+    </TR>
+    <TR> 
+      <TD height=2 vAlign=center bgColor=#ededed colspan=2><IMG src="/fce/001/tmpl/bigimg/trans.gif" border=0></TD>
+        </TR>
+  </TBODY>
+</TABLE>
+ </TD>
+<TD width=7>&nbsp;</TD>
+<TD vAlign=top width=184 bgColor=#08368a><A href="http://www.government.bg/"><IMG height=130 src="/fce/001/tmpl/bigimg/gerb.jpg" width=184 border=0></A></TD>
+<TD width=7>&nbsp;</TD>
+<TD vAlign=top>
+<TABLE height=129 cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=center noWrap bgColor=#08368a height=24> <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0211&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0211&g=" target=_self>Документи</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0224&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0224&g=" target=_self>Биография</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&g=" target=_self>В Медиите</A>  </TD></TR>
+<TR>
+<TD vAlign=center height=2><IMG height=2 src="/fce/001/tmpl/bigimg/trans.gif" width=2 border=0></TD></TR>
+<TR>
+<TD vAlign=center noWrap bgColor=#08368a height=24> <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0024&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/pink_arrow.gif" width=12 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0024&g=" target=_self>Сектори</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/pink_arrow.gif" width=12 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&g=" target=_self>Биографии</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0217&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/pink_arrow.gif" width=12 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0217&g=" target=_self>Събития</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/pink_arrow.gif" width=12 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&g=" target=_self>В Медиите</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0257&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0257&g=" target=_self>Граждански борд за свободни и прозрачни избори</A>  </TD></TR>
+<TR>
+<TD vAlign=center height=2><IMG height=2 src="/fce/001/tmpl/bigimg/trans.gif" width=2 border=0></TD></TR>
+<TR>
+<TD vAlign=center noWrap bgColor=#08368a height=24> <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0213&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0213&g=" target=_self>Водещите Новини</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&g=" target=_self>Новини</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0034&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0034&g=" target=_self>За България</A>  </TD></TR>
+<TR>
+<TD vAlign=center noWrap height=2><IMG height=2 src="/fce/001/tmpl/bigimg/trans.gif" width=2 border=0></TD></TR>
+<TR>
+<TD vAlign=center noWrap bgColor=#08368a height=24> <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0225&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0225&g=" target=_self>Заседания</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0228&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0228&g=" target=_self>Решенията Накратко</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0236&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0236&g=" target=_self>Система за Правна Информация</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0250&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0250&g=" target=_self>Плащания в СЕБРА</A>  </TD></TR>
+<TR>
+<TD vAlign=center noWrap height=2><IMG height=2 src="/fce/001/tmpl/bigimg/trans.gif" width=2 border=0></TD></TR>
+<TR>
+<TD vAlign=center noWrap bgColor=#08368a height=24> <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0015&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0015&g=" target=_self>Интернет Връзки</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0235&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0235&g=" target=_self>Обществени поръчки до 1.10.2014</A> 
+<A style="FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: verdana" href="http://customerprofile.government.bg/" target=_blank><IMG height=12 src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></A> <A style="PADDING-RIGHT: 3px; FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; if_condition: '([0263]##eq[0208];background-color:#6099A7;##else)'" href="http://customerprofile.government.bg/" target=_blank>Профил на купувача</A>  <a style="color:ffffff;font-family:verdana;font-size:11px" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0249&g="><IMG height=12 hspace="-1" src="/fce/001/tmpl/bigimg/arrow.gif" width=10 align=middle border=0></a>
+<A style='FONT-SIZE: 9px; VERTICAL-ALIGN: middle; TEXT-TRANSFORM: uppercase; COLOR: #ffffff; PADDING-TOP: 3px;PADDING-right: 3px; FONT-FAMILY: verdana; HEIGHT: 20px; TEXT-DECORATION: none; ' href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0249&g=" target=_self>Търгове</A>  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD vAlign=top>
+<TABLE height=25 cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=right width=25 bgColor=#98a8cc height=25><IMG height=12 alt=image src="/fce/001/tmpl/bigimg/white_tr.gif" width=12 border=0>&nbsp;&nbsp; <A style="TEXT-TRANSFORM: none; TEXT-DECORATION: none" href="http://www.government.bg/english"><FONT face="Verdana, Arial, Helvetica, sans-serif" color=#ffffff size=2><STRONG></STRONG></FONT></A></TD>
+<TD vAlign=center align=right width=159 bgColor=#98a8cc height=25>
+<DIV align=left><A style="TEXT-TRANSFORM: none; TEXT-DECORATION: none" href="http://www.government.bg/fce/index.shtml?s=001&amp;p=0023"><FONT face="Verdana, Arial, Helvetica, sans-serif" color=#ffffff size=2><STRONG style="TEXT-DECORATION: none" target="_self">english </STRONG></FONT></A></DIV></TD>
+<TD width=7>&nbsp;</TD>
+<TD width=184 height=25><A href="http://www.government.bg/"><IMG height=25 src="/fce/001/tmpl/bigimg/mins.gif" width=184 border=0></A></TD>
+<TD width=7>&nbsp;</TD>
+<TD vAlign=center bgColor=#98a8cc>
+<TABLE height=25 cellSpacing=0 cellPadding=1 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=center>
+&nbsp;<A style="TEXT-TRANSFORM: lowercase; COLOR: #ffffff; TEXT-DECORATION: none" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0044&g="><FONT face=Verdana size=2><STRONG><IMG height=12 alt=image hspace=1 src="/fce/001/tmpl/bigimg/white_tr.gif" width=12 align=middle border=0>&nbsp; Карта на сайта</STRONG></FONT></A> </TD>
+<TD vAlign=center>
+<DIV align=right>
+<FONT face=Verdana size=1>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<FORM name=s action=/cgi-bin/e-cms/vis/vis.pl method=post>
+<TD vAlign=center noWrap align=left height=25><INPUT type=hidden value=AND name=boolean><INPUT type=hidden value=0211,0212,0213,0214,0215,0216,0217,0218,0219,0221,0228,0225,0034 name=ssec><INPUT type=hidden value=15 name=ind><INPUT type=hidden value=Search name=bac><INPUT type=hidden value=001 name=s><INPUT type=hidden value=s_0001 name=p><INPUT type=hidden name=n><INPUT type=hidden value=0001 name=qs><INPUT type=hidden value=vis name=us><INPUT type=hidden value=1 name=start><STRONG><FONT face="Verdana, Arial, Helvetica, sans-serif" color=#ffffff size=2>търсене: </FONT></STRONG><INPUT class=s style="WIDTH: 149px; HEIGHT: 18px" name=sstr>&nbsp;<INPUT class=btn style="WIDTH: 25px; HEIGHT: 18px" type=submit align=left value=GO name=bu></TD></FORM></TR></TBODY></TABLE></FONT> </DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=center width=191>&nbsp;<IMG style="WIDTH: 19px; HEIGHT: 1px" height=1 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=25 border=0><FONT face=Verdana color=#969595 size=1>13.12.2014</FONT> </TD>
+<TD vAlign=center height=25>
+<FONT style="FONT-SIZE: 11px" face=Verdana color=#000000><A style="TEXT-DECORATION: none" href="/fce/" target=_self>»начало</A></FONT> </TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD vAlign=top width=184 bgColor=#ffffff>
+<FONT face=Verdana size=1><TABLE class=mceItemTable borderColor=#999999 cellSpacing=0 cellPadding=2 width=181 bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD bgColor=#98a8cc height=25 vAlign=middle>&nbsp;<SPAN style="COLOR: #ffffff" mce_style="color: #ffffff;"><STRONG> </STRONG>Информация</SPAN></TD></TR>
+<TR lang="" style="HEIGHT: 20px" background>
+<TD>
+<TR>
+<TD style="BACKGROUND-COLOR: #08368a" vAlign=top mce_style="background-color: &#13;&#10;&#13;&#10;#08368a;">
+<P style="TEXT-ALIGN: left" mce_style="TEXT-ALIGN: left"><SPAN style="COLOR: #c0c0c0" mce_style="color: #c0c0c0;"><SPAN style="FONT-SIZE: xx-small" mce_style="font-size: &#13;&#10;&#13;&#10;xx-small;"><SPAN style="FONT-FAMILY: verdana,geneva" mce_style="font-family: &#13;&#10;&#13;&#10;verdana,geneva;">
+<TABLE class=mceItemTable style="HEIGHT: 100%; BORDER-COLLAPSE: collapse" height="100%" cellPadding=10 width="100%" border=0>
+<TBODY>
+<TR>
+<TD><A href="http://pris.government.bg/" target=_blank mce_href="http://pris.government.bg"><STRONG><SPAN style="COLOR: #ffffff" mce_style="color: #ffffff;">СИСТЕМА ЗА ПРАВНА ИНФОРМАЦИЯ НА МИНИСТЕРСКИ СЪВЕТ</SPAN></STRONG></A><SPAN style="COLOR: #c0c0c0" mce_style="color: &#13;&#10;&#13;&#10;#c0c0c0;"><SPAN style="FONT-SIZE: xx-small" mce_style="font-size: xx-small;"><SPAN style="FONT-FAMILY: verdana,geneva" mce_style="font-family: verdana,geneva;"><BR><BR>Тук свободно може да намерите всички постановления, разпореждания и решения, одобрявани от правителствата на Република България от 1990 г. до сега <A href="http://pris.government.bg/" target=_blank mce_href="http://pris.government.bg"><IMG border=0 hspace=5 src="http://www.government.bg/fce/001/tmpl/bigimg/green_arrow.gif" width=12 align=absMiddle height=12 mce_src="/fce/001/tmpl/bigimg/green_arrow.gif"></A></SPAN></SPAN></SPAN></TD></TR></ TBODY></TBODY></TABLE></SPAN></SPAN></SPAN></P></TD></TR>
+<TR>
+<TD lang="" style="HEIGHT: 20px" vAlign=top scope=""></TD></TR>
+<TR>
+<TD>
+<P align=center><A href="http://anticorruption.government.bg/" target=_blank mce_href="http://anticorruption.government.bg"><IMG border=0 alt=image src="http://www.government.bg/fce/001/0003/bigimg/anticor1.jpg" align=center mce_src="/fce/001/0003/bigimg/anticor1.jpg"></A></P></TD></TR>
+<TR>
+<TD vAlign=top>
+<P align=center>
+<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0," classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 width=180 height=225 19,0><PARAM NAME="_cx" VALUE="4763"><PARAM NAME="_cy" VALUE="5953"><PARAM NAME="FlashVars" VALUE=""><PARAM NAME="Movie" VALUE="/fce/001/0003/files/stajove.swf"><PARAM NAME="Src" VALUE="/fce/001/0003/files/stajove.swf"><PARAM NAME="WMode" VALUE="Window"><PARAM NAME="Play" VALUE="-1"><PARAM NAME="Loop" VALUE="-1"><PARAM NAME="Quality" VALUE="High"><PARAM NAME="SAlign" VALUE=""><PARAM NAME="Menu" VALUE="-1"><PARAM NAME="Base" VALUE=""><PARAM NAME="AllowScriptAccess" VALUE=""><PARAM NAME="Scale" VALUE="ShowAll"><PARAM NAME="DeviceFont" VALUE="0"><PARAM NAME="EmbedMovie" VALUE="0"><PARAM NAME="BGColor" VALUE=""><PARAM NAME="SWRemote" VALUE=""><PARAM NAME="MovieData" VALUE=""><PARAM NAME="SeamlessTabbing" VALUE="1"><PARAM NAME="Profile" VALUE="0"><PARAM NAME="ProfileAddress" VALUE=""><PARAM NAME="ProfilePort" VALUE="0"><PARAM NAME="AllowNetworking" VALUE="all"><PARAM NAME="AllowFullScreen" VALUE="false"><PARAM NAME="AllowFullScreenInteractive" VALUE="false"><PARAM NAME="IsDependent" VALUE="0">
+<embed src="/fce/001/0003/files/stajove.swf" mce_src="/fce/001/0003/files/stajove.swf" 
+quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" 
+type="application/x-shockwave-flash" width="180" height="225"></embed>
+</OBJECT></P></TD></TR>
+<TR>
+<TD></TD></TR>
+<TR>
+<TD vAlign=top>
+<P align=center>
+<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0," classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 width=180 height=100 19,0><PARAM NAME="_cx" VALUE="4763"><PARAM NAME="_cy" VALUE="2646"><PARAM NAME="FlashVars" VALUE=""><PARAM NAME="Movie" VALUE="/fce/001/0003/files/baner_ms_2013.swf"><PARAM NAME="Src" VALUE="/fce/001/0003/files/baner_ms_2013.swf"><PARAM NAME="WMode" VALUE="Window"><PARAM NAME="Play" VALUE="0"><PARAM NAME="Loop" VALUE="-1"><PARAM NAME="Quality" VALUE="High"><PARAM NAME="SAlign" VALUE=""><PARAM NAME="Menu" VALUE="-1"><PARAM NAME="Base" VALUE=""><PARAM NAME="AllowScriptAccess" VALUE=""><PARAM NAME="Scale" VALUE="ShowAll"><PARAM NAME="DeviceFont" VALUE="0"><PARAM NAME="EmbedMovie" VALUE="0"><PARAM NAME="BGColor" VALUE=""><PARAM NAME="SWRemote" VALUE=""><PARAM NAME="MovieData" VALUE=""><PARAM NAME="SeamlessTabbing" VALUE="1"><PARAM NAME="Profile" VALUE="0"><PARAM NAME="ProfileAddress" VALUE=""><PARAM NAME="ProfilePort" VALUE="0"><PARAM NAME="AllowNetworking" VALUE="all"><PARAM NAME="AllowFullScreen" VALUE="false"><PARAM NAME="AllowFullScreenInteractive" VALUE="false"><PARAM NAME="IsDependent" VALUE="0">
+<embed src="/fce/001/0003/files/baner_ms_2013.swf" mce_src="/fce/001/0003/files/baner_ms_2013.swf" 
+quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" 
+type="application/x-shockwave-flash" width="180" height="100"></embed>
+</OBJECT></P></TD></TR>
+<TR>
+<TD></TD></TR>
+<TR>
+<TD vAlign=top>
+<P align=center>
+<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0," classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 width=180 height=150 19,0><PARAM NAME="_cx" VALUE="4763"><PARAM NAME="_cy" VALUE="3969"><PARAM NAME="FlashVars" VALUE=""><PARAM NAME="Movie" VALUE="/fce/001/0003/files/banner1_curves.swf"><PARAM NAME="Src" VALUE="/fce/001/0003/files/banner1_curves.swf"><PARAM NAME="WMode" VALUE="Window"><PARAM NAME="Play" VALUE="-1"><PARAM NAME="Loop" VALUE="-1"><PARAM NAME="Quality" VALUE="High"><PARAM NAME="SAlign" VALUE=""><PARAM NAME="Menu" VALUE="-1"><PARAM NAME="Base" VALUE=""><PARAM NAME="AllowScriptAccess" VALUE=""><PARAM NAME="Scale" VALUE="ShowAll"><PARAM NAME="DeviceFont" VALUE="0"><PARAM NAME="EmbedMovie" VALUE="0"><PARAM NAME="BGColor" VALUE=""><PARAM NAME="SWRemote" VALUE=""><PARAM NAME="MovieData" VALUE=""><PARAM NAME="SeamlessTabbing" VALUE="1"><PARAM NAME="Profile" VALUE="0"><PARAM NAME="ProfileAddress" VALUE=""><PARAM NAME="ProfilePort" VALUE="0"><PARAM NAME="AllowNetworking" VALUE="all"><PARAM NAME="AllowFullScreen" VALUE="false"><PARAM NAME="AllowFullScreenInteractive" VALUE="false"><PARAM NAME="IsDependent" VALUE="0">
+<embed src="/fce/001/0003/files/banner1_curves.swf" 
+mce_src="/fce/001/0003/files/banner1_curves.swf" quality="high" 
+pluginspage="http://www.macromedia.com/go/getflashplayer" 
+type="application/x-shockwave-flash" width="180" height="150"></embed>
+</OBJECT></P></TD></TR>
+<TR>
+<TD>&nbsp;</TD></TR>
+<TR>
+<TD vAlign=top align=center><A href="http://www.euaffairs.government.bg/" target=_blank mce_href="http://www.euaffairs.government.bg/"><IMG title=07.10.09_baner_SEV.jpg style="BORDER-TOP: 0pt; BORDER-RIGHT: 0pt; BORDER-BOTTOM: 0pt; BORDER-LEFT: 0pt" border=0 alt=07.10.09_baner_SEV.jpg src="http://www.government.bg/fce/001/0003/bigimg/07.10.09_baner_SEV.jpg" mce_style="border: 0pt none;" mce_src="/fce/001/0003/bigimg/07.10.09_baner_SEV.jpg"></A></TD></TR>
+<TR>
+<TD vAlign=top>&nbsp;</TD></TR></TBODY></TABLE></FONT>
+<FONT face=Verdana size=1><table border="0" cellspacing="0" cellpadding="2" width="181" bgcolor="#ffffff" bordercolor="#999999">
+<tbody>
+<tr>
+<td valign="top">
+<p align="center"><br /><a href="http://www.solvit.government.bg" target="_blank"><img src="/fce/001/0003/bigimg/solvit.jpg" border="0" alt="image" /></a></p>
+<p align="center"><strong>СОЛВИТ</strong> е услуга за разрешаване на презгранични проблеми във вътрешния пазар на ЕС.</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="center">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table></FONT>
+<FONT face=Verdana size=1>
+<P align=center>
+<OBJECT codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0 height=86 width=171 classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000><PARAM NAME="_cx" VALUE="4524"><PARAM NAME="_cy" VALUE="2275"><PARAM NAME="FlashVars" VALUE=""><PARAM NAME="Movie" VALUE="/fce/001/0003/bigimg/portal_198_100_2.swf"><PARAM NAME="Src" VALUE="/fce/001/0003/bigimg/portal_198_100_2.swf"><PARAM NAME="WMode" VALUE="Window"><PARAM NAME="Play" VALUE="-1"><PARAM NAME="Loop" VALUE="-1"><PARAM NAME="Quality" VALUE="High"><PARAM NAME="SAlign" VALUE=""><PARAM NAME="Menu" VALUE="-1"><PARAM NAME="Base" VALUE=""><PARAM NAME="AllowScriptAccess" VALUE=""><PARAM NAME="Scale" VALUE="ShowAll"><PARAM NAME="DeviceFont" VALUE="0"><PARAM NAME="EmbedMovie" VALUE="0"><PARAM NAME="BGColor" VALUE=""><PARAM NAME="SWRemote" VALUE=""><PARAM NAME="MovieData" VALUE=""><PARAM NAME="SeamlessTabbing" VALUE="1"><PARAM NAME="Profile" VALUE="0"><PARAM NAME="ProfileAddress" VALUE=""><PARAM NAME="ProfilePort" VALUE="0"><PARAM NAME="AllowNetworking" VALUE="all"><PARAM NAME="AllowFullScreen" VALUE="false">
+<embed src=/fce/001/0003/bigimg/portal_198_100_2.swf  width=171 height=86  quality=high type=application/x-shockwave-flash pluginspage=http://www.macromedia.com/go/getflashplayer loop=true menu=false designtimesp=24812 designtimesp=24858></embed></OBJECT></P></FONT>
+<FONT face=Verdana size=1><div align="center">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="170" height="85">
+    <param name="movie" value="/fce/001/0003/bigimg/portal_198_100.swf">
+    <param name="quality" value="high">
+    <embed src="/fce/001/0003/bigimg/portal_198_100.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="170" height="85"></embed>
+  </object>
+</div>
+</FONT>
+<FONT face=Verdana size=1><p>&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="2" width="181" bgcolor="#ffffff" bordercolor="#999999">
+<tbody>
+<tr>
+<td style="background-color: #3182cd;" valign="top">
+<p style="TEXT-ALIGN: left">
+<table style="border-collapse: collapse; height: 100%;" border="0" cellpadding="10" width="100%">
+<tbody>
+<tr>
+<td><a href="http://ar2.government.bg/ras/" target="_blank"><span style="font-size: small;"><span style="color: #ffffff;"><span style="font-size: x-small;"><strong>АДМИНИСТРАТИВЕН РЕГИСТЪР</strong></span></span></span></a></td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+</tbody>
+</table></FONT>
+<FONT face=Verdana size=1><p>&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="2" width="181" bgcolor="#ffffff" bordercolor="#999999">
+<tbody>
+<tr>
+<td style="background-color: #08368a;" valign="top">
+<p style="TEXT-ALIGN: left">
+<table style="border-collapse: collapse; height: 100%;" border="0" cellpadding="10" width="100%">
+<tbody>
+<tr>
+<td><a href="/cgi-bin/e-cms/vis/vis.pl?s=001&amp;p=0242"><span style="font-size: medium;"><strong><span style="color: #ffffff;">ВЕРСИЯ ЗА ХОРА С НАМАЛЕНО ЗРЕНИЕ</span></strong></span></a></td>
+</tr>
+</tbody>
+</table>
+</p>
+</td>
+</tr>
+</tbody>
+</table></FONT> </TD>
+<TD width=7>&nbsp;</TD>
+<TD vAlign=top bgColor=#ffffff height=400>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD>
+<TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#98A8CC border=0>
+<TBODY>
+<TR>
+<TD width=5></TD>
+<TD vAlign=center height=24><FONT face=Verdana color=#ffffff size=2><STRONG><A class=header href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0213&g=">Водещите Новини</A></STRONG></FONT></TD></TR></TBODY></TABLE><TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top colSpan=2 height=7><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0213&n=909&g="><FONT face=Verdana size=1>Жан-Клод Юнкер: България не може да бъде шантажирана. Тя е велика страна и зад нея стои цяла Европа<BR></FONT></A><FONT face=Verdana color=#999999 size=1>04 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0213&n=909&g=" target=_self><IMG src="/fce/001/0213/images/0412_pm-kuncker01.jpg" width=180 border=0></A> </TD>
+<TD vAlign=top width="100%"><FONT face=Verdana color=#666666 size=1><P style="TEXT-ALIGN: justify" mce_style="TEXT-ALIGN: justify"><SPAN style="FONT-SIZE: xx-small" mce_style="font-size: xx-small;"><STRONG>Цел в моя мандат е механизмът за проверка и сътрудничество да приключи, заяви председателят на Европейската комисия</STRONG></SPAN></P>
+<P style="TEXT-ALIGN: justify" mce_style="TEXT-ALIGN: justify"><?xml:namespace prefix = o /><o:p>
+<P style="TEXT-ALIGN: justify; LINE-HEIGHT: normal; MARGIN: 0cm 0cm 0pt" class=MsoNormal mce_style="TEXT-ALIGN: justify; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal">„Европейската комисия и Европейският съюз не са само наблюдатели, ние сме с България и няма да приемем никакви шантажи по енергийните въпроси“. Това заяви на съвместен брифинг с премиера Бойко Борисов председателят на Европейската комисия (ЕК) Жан-Клод Юнкер. В пресконференцията след проведената работна среща в Брюксел участва и заместник-председателят на ЕК и комисар по бюджета и човешките ресурси Кристалина Георгиева.</o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top></TD>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>                    
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0213&n=908&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Премиерът Бойко Борисов: Ще се постараем максимално да помогнем на всяка община</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>03 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P><?xml:namespace prefix = "o" /><o:p>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt" mce_style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><SPAN style="FONT-SIZE: xx-small; FONT-FAMILY: " mce_style="font-size: xx-small;"><SPAN style="FONT-FAMILY: verdana,geneva" mce_style="font-family: verdana,geneva;">Ще се постараем максимално да помогнем на всяка община, заяви министър-председателят Бойко Борисов по време на Националната годишна конференция на Националното сдружение на общините в Република България. Премиерът подчерта, че не дели общините на „наши” и „ваши“, нито хората на партиен принцип. „Не сме го правили и няма да го правим“, категоричен беше Борисов. По думите му, в изминалата година и половина се е видяло какво не трябва да е отношението към кметовете. „Всички сте ни равни, както и ние за вас“, добави министър-председателят. Той призова централната и местната власт да работят в синхрон и с разбиране. „Избиран съм два пъти за кмет и знам какво е хората да ти гласуват доверие“, отбеляза Борисов. </SPAN></SPAN></SPAN></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0213&n=907&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Бойко Борисов за „Южен поток“: Ние като парламент ще искаме отговори от Брюксел. Не би било честно България да не отстоява европейските принципи</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>03 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P class=MsoNoSpacing style="MARGIN: 0cm 0cm 0pt" mce_style="MARGIN: 0cm 0cm 0pt">Никой от нас не е прочел и цифра колко България ще спечели от „Южен поток”, все още не можем да се доберем до договора. Бих помолил парламента, ако трябва силово да вземем документите, за да видим какво пише. Това заяви от парламентарната трибуна министър-председателят на Република България Бойко Борисов. Той посочи, че е разбрал за спирането на проекта от изказването на руския президент Владимир Путин в Турция.&nbsp; Борисов призова&nbsp; в парламента да се проведе конструктивен диалог и да поставят конкретни задачи към него във връзка с позицията на България, за да може при посещението си в Брюксел да я представи пред председателя на Европейската комисия, вместо да се чете кой колко е допринесъл или попречил на проекта. По думите му, има няколко въпроси, които ще постави и би било добре да му бъдат препоръчани от българския парламент.<?xml:namespace prefix = "o" /><o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+    
+<TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#98A8CC border=0>
+<TBODY>
+<TR>
+<TD width=5></TD>
+<TD vAlign=center height=24><FONT face=Verdana color=#ffffff size=2><STRONG><A class=header href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&g=">Новини</A></STRONG></FONT></TD></TR></TBODY></TABLE>                    
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&n=3333&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>МВР спешно търси възможности за решаване на проблема със следгаранционната поддръжка на системата за видеонаблюдение на СДВР</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&n=3332&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>България изпрати писмо до Европейската комисия с предложение в страната да бъде изграден газов хъб </FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&n=3331&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Вицепремиерът Кунева подписа заповед за публично изслушване на кандидатите за председател на Държавната агенция за българите в чужбина</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&n=3330&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Томислав Дончев: Когато говорим за европейско финансиране, е важно не движението на парите, а ефектът на инвестициите</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0212&n=3329&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/yellow_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Антонио Лопес поздрави министър-председателя Бойко Борисов за встъпването му в длъжност</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+    
+<TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#98A8CC border=0>
+<TBODY>
+<TR>
+<TD width=5></TD>
+<TD vAlign=center height=24><FONT face=Verdana color=#ffffff size=2><STRONG><A class=header href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&g=">В Медиите Министър-председател</A></STRONG></FONT></TD></TR></TBODY></TABLE>                    
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&n=73&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Бойко Борисов: Когато знаеш, че си за кратко и всеки ден може да е последен в управлението, работиш на пълни обороти</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>06 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P style="LINE-HEIGHT: normal; MARGIN: 0cm 0cm 8pt" class=MsoNormal mce_style="MARGIN: 0cm 0cm 8pt; LINE-HEIGHT: normal">При правителството на Пламен Орешарски е направено всичко възможно, за да бъде убит проектът „Южен поток“, казва министър-председателят в интервю за радио „К2“</P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&n=72&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Бойко Борисов: ЗАЛАГАМЕ НА РАСТЕЖ И ИКОНОМИИ</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>17 Ноември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P><?xml:namespace prefix = "o" /><o:p>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt" mce_style="MARGIN: 0cm 0cm 0pt">Съставянето на този кабинет не ми беше щастливият ден, но е ясно, че по-добър не може да се направи, казва министър-председателят&nbsp;в сп."Life"</o:p>&nbsp;</P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&n=71&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Проф. Георги Близнашки: Осигурихме нормалната работа на институциите и на обществените системи </FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>30 Октомври 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal">Интервю на министър-председателя за БНТ и БНР<o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&n=70&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Георги Близнашки - министър-председател в служебния кабинет, в интервю за предаването „Полиграф“ на Bulgaria on Air</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>11 Октомври 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0215&n=69&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Георги Близнашки: Актуализацията на бюджета е неизбежна стъпка</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Септември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal>Без нея държавата няма да може да просъществува нормално до края на годината, казва министър-председателят в предаването „Панорама“ на БНТ<o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+    
+<TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#98A8CC border=0>
+<TBODY>
+<TR>
+<TD width=5></TD>
+<TD vAlign=center height=24><FONT face=Verdana color=#ffffff size=2><STRONG><A class=header href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&g=">В Медиите Кабинет</A></STRONG></FONT></TD></TR></TBODY></TABLE>                    
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&n=961&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Николина Ангелкова: Туризмът иска фантазия</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>13 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal>България се нуждае от обновен стратегически документ за развитието на този сектор, казва министърът на туризма пред в. „Баркеръ”<o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&n=959&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Веселин Вучков: 110 патрулки ще записват звук и картина от януари</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>13 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal>Работим активно по издирването на Петко Сертов заедно с Гърция, надявам се, че случаят ще се разреши успешно, казва министърът на вътрешните работи пред в. „24 часа”<o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&n=960&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Вежди Рашидов: Бог движи ръцете ми</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>13 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormalCxSpFirst mce_style="MARGIN: 0cm 0cm 0pt">Никой от нас не е минал по червените килими на космоса, казва министърът на културата пред в. „Стандарт”<?xml:namespace prefix = o /><o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&n=958&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Петър Москов: Диагнозата на обществото е липса на държава в цели региони</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal>Министърът на здравеопазването в предаването „Панорама“ на БНТ<o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+                        
+<TABLE cellSpacing=0 cellPadding=1 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0239&n=957&g=" target=_self><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0><FONT face=Verdana size=1>Христо Иванов: Имаме много сериозен проблем със случайното разпределение на делата</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top height=7><FONT face=Verdana color=#799999 size=1>12 Декември 2014</FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal>Вместо реформи, виждаме объркани действия на ВСС, казва министърът на правосъдието в предаването „Тази сутрин“ на бТВ<o:p></o:p></P></FONT></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana size=1><IMG height=4 alt=trans.gif src="/fce/001/tmpl/bigimg/trans.gif" width=4 border=0></FONT></TD></TR></TBODY></TABLE>
+    
+    
+    
+    
+      </TD></TR>
+<TR>
+<TD>  </TD></TR>
+<TR>
+<TD>  </TD></TR></TBODY></TABLE></TD>
+<TD width=7>&nbsp;</TD>
+<TD vAlign=top width=184 bgColor=#ffffff>
+<TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#98A8CC border=0>
+<TBODY>
+<TR>
+<TD width=5></TD>
+<TD vAlign=center height=24><FONT face=Verdana color=#ffffff size=2><STRONG><A class=header href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0211&g=">Документи</A></STRONG></FONT></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0211&n=125&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0>Доклад относно проблема със собствеността, отговорностите и контрола за техническото състояние на язовирите, във връзка с превенцията от наводнения</FONT></A></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0211&n=126&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0>Споразумение за сътрудничество между МС и НСОРБ</FONT></A></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0211&n=122&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/red_tr.gif" width=12 align=absMiddle border=0>ПРОГРАМНА ДЕКЛАРАЦИЯ КЛЮЧОВИ ПРИОРИТЕТИ ЗА ФОРМИРАНЕ НА СТАБИЛНО ПАРЛАМЕНТАРНО МНОЗИНСТВО В 43-ТО НАРОДНО СЪБРАНИЕ И СЪСТАВЯНЕ НА ПРОЕВРОПЕЙСКО РЕФОРМАТОРСКО ПРАВИТЕЛСТВО ЗА СТАБИЛНО РАЗВИТИЕ НА БЪЛГАРИЯ</FONT></A></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#98A8CC border=0>
+<TBODY>
+<TR>
+<TD width=5></TD>
+<TD vAlign=center height=24><FONT face=Verdana color=#ffffff size=2><STRONG><A class=header href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0217&g=">Събития</A></STRONG></FONT></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0217&n=3840&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>14-15 декември- Министър-председателят Бойко Борисов заминава на официално посещение в Берлин</FONT></A></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0217&n=3841&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>14 декември – Вицепремиерът Кунева и заместник-министър Гунев ще се запознаят с готовността на Летище София за работа в съответствие с шенгенските изисквания</FONT></A></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0217&n=3842&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>13 декември - Министър Ангелкова дава старт на сезона в зимните курорти</FONT></A></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#98A8CC border=0>
+<TBODY>
+<TR>
+<TD width=5></TD>
+<TD vAlign=center height=24><FONT face=Verdana color=#ffffff size=2><STRONG><A class=header href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0218&g=">Правителство</A></STRONG></FONT></TD></TR></TBODY></TABLE>
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=41&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Бойко Борисов</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър-председател</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=40&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Румяна Бъчварова</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Заместник министър-председател по коалиционна политика и държавна администрация</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=39&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Меглена Кунева</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Заместник министър-председател по координация на европейските политики и институционалните въпроси</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=38&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Томислав Дончев</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Заместник министър-председател по европейските фондове и икономическата политика</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=37&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Ивайло Калфин</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Заместник министър-председател по демографската и социалната политика и министър на труда и социалната политика</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=36&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Владислав Горанов</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на финансите</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=35&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Веселин Вучков</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на вътрешните работи</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=34&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Лиляна Павлова</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на регионалното развитие и благоустройството</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=33&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Николай Ненчев</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на отбраната</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=32&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Даниел Митов</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на външните работи</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=31&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Христо Иванов</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на правосъдието</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=30&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Тодор Танев</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на образованието и науката</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=29&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Петър Москов</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на здравеопазването</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=28&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Вежди Рашидов</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на културата</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=27&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Ивелина Василева</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на околната среда и водите</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=26&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Десислава Танева</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на земеделието и храните</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=25&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Ивайло Московски</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на транспорта, информационните технологии и съобщенията</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=24&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Божидар Лукарски</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на икономиката</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=23&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Теменужка Петкова</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на енергетиката</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=22&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Николина Ангелкова</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на туризма</P></FONT></TD></TR></TBODY></TABLE>&nbsp;
+<TABLE height=10 cellSpacing=0 cellPadding=3 width="100%" bgColor=#ffffff border=0>
+<TBODY>
+<TR>
+<TD vAlign=top><A style="TEXT-TRANSFORM: uppercase" href="/cgi-bin/e-cms/vis/vis.pl?s=001&p=0219&n=21&g="><FONT face=Verdana size=1><IMG height=12 hspace=2 src="/fce/001/tmpl/bigimg/pink_tr.gif" width=12 align=absMiddle border=0>Красен Кралев</FONT></A></TD></TR>
+<TR>
+<TD vAlign=top><FONT face=Verdana color=#666666 size=1><P>Министър на младежта и спорта</P></FONT></TD></TR></TBODY></TABLE>&nbsp; </TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD>
+<DIV align=center>
+<FONT face=Verdana size=1><P>(c) Министерски Съвет на Република България<BR>1594 София бул. “Дондуков” №1 - тел. централа (+359 2) 940 29 99<BR>Правителствена Информационна Служба<BR>тел.:&nbsp;(+359 2)&nbsp;940&nbsp;27&nbsp;70 факс:&nbsp;(+359 2)&nbsp;980&nbsp;21&nbsp;01<BR><STRONG>е-mail: </STRONG><A href="mailto:GIS@government.bg" mce_href="mailto:GIS@government.bg"><STRONG>GIS@government.bg</STRONG></A></P>
+<P>RSS: <A href="http://www.government.bg/cgi-bin/e-cms/rss.pl" target=_blank mce_href="/cgi-bin/e-cms/rss.pl">Новини</A>, <A href="http://www.government.bg/cgi-bin/e-cms/rss.pl?ch=0003" target=_blank mce_href="/cgi-bin/e-cms/rss.pl?ch=0003">Събития</A>, <A href="http://www.government.bg/cgi-bin/e-cms/rss.pl?ch=0004" target=_blank mce_href="/cgi-bin/e-cms/rss.pl?ch=0004">Решения</A></P></FONT> </DIV></TD></TR></TBODY></TABLE></BODY>
+<!-- 0.26 -->
+
+<!-- vgen -->
 </html>

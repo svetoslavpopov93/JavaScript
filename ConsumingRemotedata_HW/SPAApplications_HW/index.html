@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Books</title>
+    <link href="styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Books API</h1>
+    </header>
+    <article>
+        <section>
+            <h3>Add new books:</h3>
+            <label for="tb_new_book_name">Name:</label>
+            <input type="text" id="tb_new_book_name" />
+            <label for="tb_new_book_author">Author:</label>
+            <input type="text" id="tb_new_book_author" />
+            <label for="tb_new_book_isbn">ISBN:</label>
+            <input type="text" id="tb_new_book_isbn" />
+            <a id="btn_add">Add Book</a>
+        </section>
+        <section>
+            <a id="btn_listBooks">Refresh books</a>
+            <ol id="ol_books"></ol>
+        </section>
+    </article>
+    <footer>Books API © 2014. All rights reserved.</footer>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/Models/bookModel.js"></script>
+    <script src="scripts/Views/bookView.js"></script>
+    <script src="scripts/Controllers/serviceController.js"></script>
+    <script src="scripts/Controllers/bookController.js"></script>
+    <script src="scripts/Controllers/bookController.js"></script>
+    <script>
+        var serviceManager = new app.serviceController("iXM4oT8oP2O1zbhBo4Bxj76Q0rjlXoJpvarcfMiY", "LrdH0g9pWcNQVmrvR1vP8YKXKu2kp9B1VcAHiSni", "https://api.parse.com/1/classes/Book");
+
+
+        var bk = new bookModel("test1", "testAuthor", 32424);
+        serviceManager.getRequest();
+        app.bookController.getAllBooks();
+    </script>
+</body>
+</html>

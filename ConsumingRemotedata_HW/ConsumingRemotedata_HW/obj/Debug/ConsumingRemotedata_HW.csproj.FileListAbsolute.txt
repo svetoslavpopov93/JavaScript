@@ -3,3 +3,8 @@ C:\Users\Svetoslav\Desktop\ConsumingRemotedata_HW\ConsumingRemotedata_HW\bin\Con
 C:\Users\Svetoslav\Desktop\ConsumingRemotedata_HW\ConsumingRemotedata_HW\obj\Debug\ConsumingRemotedata_HW.csprojResolveAssemblyReference.cache
 C:\Users\Svetoslav\Desktop\ConsumingRemotedata_HW\ConsumingRemotedata_HW\obj\Debug\ConsumingRemotedata_HW.dll
 C:\Users\Svetoslav\Desktop\ConsumingRemotedata_HW\ConsumingRemotedata_HW\obj\Debug\ConsumingRemotedata_HW.pdb
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\ConsumingRemotedata_HW\bin\ConsumingRemotedata_HW.dll
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\ConsumingRemotedata_HW\bin\ConsumingRemotedata_HW.pdb
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\ConsumingRemotedata_HW\obj\Debug\ConsumingRemotedata_HW.csprojResolveAssemblyReference.cache
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\ConsumingRemotedata_HW\obj\Debug\ConsumingRemotedata_HW.dll
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\ConsumingRemotedata_HW\obj\Debug\ConsumingRemotedata_HW.pdb

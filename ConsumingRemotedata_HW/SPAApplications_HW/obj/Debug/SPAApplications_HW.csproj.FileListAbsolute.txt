@@ -1,0 +1,5 @@
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\SPAApplications_HW\bin\SPAApplications_HW.dll
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\SPAApplications_HW\bin\SPAApplications_HW.pdb
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\SPAApplications_HW\obj\Debug\SPAApplications_HW.csprojResolveAssemblyReference.cache
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\SPAApplications_HW\obj\Debug\SPAApplications_HW.dll
+C:\Users\Svetoslav\Documents\GitHub\JavaScript\ConsumingRemotedata_HW\SPAApplications_HW\obj\Debug\SPAApplications_HW.pdb

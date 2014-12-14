@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css"/>
+    <title>Products</title>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <img class="img-header" src="imgs/trash.png" width="50px"/>
+        <h1 class="site-header">Products</h1>
+        <nav id="menu">
+            <ul id="on-non-logged-user" class="menu">
+                <li class="nav-button"><a href="#" class="btn_home">Home</a></li>
+                <li class="nav-button"><a href="#" class="btn_login">Login</a></li>
+                <li class="nav-button"><a href="#" class="btn_register">Register</a></li>
+            </ul>
+            <ul id="on-logged-user" class="menu">
+                <li class="nav-button"><a href="#" class="btn_home">Home</a></li>
+                <li class="nav-button"><a href="#" id="btn_products">Products</a></li>
+                <li class="nav-button"><a href="#" id="btn_add">Add Product</a></li>
+                <li class="nav-button"><a href="#" id="btn_logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+
+		<!-- Registration form -->
+        <section id="register-form">
+            <div class="register-form">
+                <header class="main-header">Register</header>
+                <div class="data">
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" placeholder="Username..."/>
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" placeholder="Password..."/>
+                    <label for="confirm-password">Confirm password:</label>
+                    <input type="password" id="confirm-password" placeholder="Password again..."/>
+                </div>
+                <div class="panel">
+                    <button class="button" id="register-button">Register</button>
+                    <span>or</span>
+                    <a href="#" class="btn_login">Login</a>
+                </div>
+            </div>
+        </section>
+
+        <br />
+		
+		<!-- Login form -->
+        <section id="login-form">
+            <div class="login-form">
+                <header class="main-header">Login</header>
+                <div class="data">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" placeholder="Username..."/>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" placeholder="Password..."/>
+                </div>
+                <div class="panel">
+                    <button id="login-button" class="button">Login</button>
+                    <span>or</span>
+                    <a href="#" class="btn_register">Register</a>
+                </div>
+            </div>
+        </section>
+
+        <br />
+		
+		<!-- Welcome guest -->
+        <section id="welcome-guest">
+            <div class="welcome-message">
+                <header class="main-header">Welcome to Products!</header>
+                <h3 class="centered">Please <a href="#" class="btn_login">login</a> to access the site.</h3>
+            </div>
+        </section>
+        <br />
+		
+		<!-- Welcome user -->
+        <section id="welcome-user">
+            <div class="welcome-message">
+                <header class="main-header" id="welcome-user-header"></header>
+            </div>
+        </section>
+
+        <br />
+
+		<!-- Add product form -->
+        <section id="add-product-form">
+            <div class="add-product-form">
+                <header class="main-header">Add new product</header>
+                <div class="data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="new_product_name" placeholder="Item name..."/>
+                    <label for="category">Category:</label>
+                    <input type="text" id="new_product_category" placeholder="Category..."/>
+                    <label for="price">Price:</label>
+                    <input type="text" id="new_product_price" placeholder="0.00"/>
+                </div>
+                <div class="panel">
+                    <button id="add-product-button" class="button">Add</button>
+                    <a href="#" id="cancel_btn">Cancel</a>
+                </div>
+            </div>
+        </section>
+        <br />
+		
+		<!-- Delete product form -->
+        <section id="delete-product-form">
+            <div class="delete-product-form">
+                <header class="main-header">Delete product</header>
+                <div class="data">
+                    <label>Name:</label>
+                    <input type="text" value="3 Windows" disabled id="delete_name"/>
+                    <label>Category:</label>
+                    <input type="text" value="Other" disabled id="delete_category"/>
+                    <label>Price:</label>
+                    <input type="text" value="44.00" disabled id="delete_price">
+                </div>
+                <div class="panel">
+                    <button id="delete-product-button" class="button">Delete</button>
+                    <a href="#">
+                        <button class="button" id="delete_cancel">Cancel</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <br />
+		
+		<!-- Edit product form -->
+        <section id="edit-product-form">
+            <div class="edit-product-form">
+                <header class="main-header">Edit product</header>
+                <div class="data">
+                    <label for="item-name">Name:</label>
+                    <input type="text" id="edit_name" value="3 Windows" placeholder="Name..."/>
+                    <label for="category">Category:</label>
+                    <input type="text" id="edit_category" value="Other" placeholder="Category..."/>
+                    <label for="price">Price:</label>
+                    <input type="text" id="edit_price" value="44.00" placeholder="0.00"/>
+                </div>
+                <div class="panel">
+                    <button id="edit-product-button" class="button">Edit</button>
+                    <a href="#">
+                        <button class="button" id="edit_cancel_btn">Cancel</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <br />
+
+		<!-- Products list -->
+        <section id="products-list">
+            <aside class="filters">
+                <h3>Filter</h3>
+                <input id="search-bar" class="search-bar" type="text" placeholder="Keyword.."/>
+                <label>Price:</label>
+                <input id="min-price" class="input-num" type="number" value="0" min="0"/>
+                <span>-</span>
+                <input id="max-price" class="input-num" type="number" value="10000"/>
+                <label>Category:</label>
+                <select id="category" class="category">
+                    <option value="All">All</option>
+                    <option value="Animals">Animals</option>
+                    <option value="Food">Food</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button id="filter" class="filter-button">Filter</button>
+                <p class="clear-filters" id="clear-filters">Clear filters</p>
+            </aside>
+            <div class="products">
+                <ul id="products_container">
+                    <!--<li class="product">
+                        <div class="product-info">
+                            <p class="item-name">Wild Rabbit</p>
+                            <p class="category"><span class="pre">Category:</span>Animals</p>
+                            <p class="price"><span class="pre">Price:</span> $200.00</p>
+                        </div>
+                        <footer class="product-footer">
+                            <a href="#">
+                                <button class="edit-button">Edit</button>
+                            </a>
+                            <a href="#">
+                                <button class="delete-button">Delete</button>
+                            </a>
+                        </footer>
+                    </li>
+                    <li class="product">
+                        <div class="product-info">
+                            <p class="item-name">3 Windows</p>
+                            <p class="category"><span class="pre">Category:</span>Other</p>
+                            <p class="price"><span class="pre">Price:</span>$44.00</p>
+                        </div>
+                        <footer class="product-footer">
+                            <a href="#">
+                                <button class="edit-button">Edit</button>
+                            </a>
+                            <a href="#">
+                                <button class="delete-button">Delete</button>
+                            </a>
+                        </footer>
+                    </li>
+                    <li class="product">
+                        <div class="product-info">
+                            <p class="item-name">Expired Milk</p>
+                            <p class="category"><span class="pre">Category:</span>Food</p>
+                            <p class="price"><span class="pre">Price:</span>$3.99</p>
+                        </div>
+                        <footer class="product-footer">
+                        </footer>
+                    </li>-->
+                </ul>
+            </div>
+        </section>
+
+    </div>
+</div>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/noty.js"></script>
+    <script src="scripts/product.js"></script>
+    <script src="scripts/user-session.js"></script>
+    <script src="scripts/ajax-service.js"></script>
+    <script src="scripts/controller.js"></script>
+    <script src="scripts/view-manager.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
