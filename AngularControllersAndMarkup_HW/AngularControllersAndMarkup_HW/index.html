@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="videoApp">
+<head>
+    <title>Video system</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body ng-controller="VideoController">
+    <header>
+        <h1>Video System</h1>
+    </header>
+    <section>
+        <h2>{{video.title}}</h2>
+        <img ng-src="{{video.pictureUrl}}" />
+        <div>
+            <span class="span_length">{{video.length}}</span>
+            <span class="span_category">Category: {{video.category}}</span>
+            <span class="span_subscribers">Subscribers: {{video.subscribers}}</span>
+            <a href="" ng-click="changeClass()" class="a_subs" ng-class="linkClass">Subs</a>
+        </div>
+        <div class="comments_container">
+            <ul>
+                <li ng-repeat ="comment in video.comments">
+                    <div><span>{{comment.username}}</span>:  {{comment.content}}</div>
+                    <div>
+                        <span>{{comment.date | date: 'dd-MMM-yyyy'}}</span>
+                        <span>Likes: [{{comment.likes}}]</span>
+                        <a ng-href="{{comment.websiteUrl}}">{{comment.websiteUrl}}</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <aside>
+        <ul>
+            <li ng-repeat="video in videos"><a href="#" ng-click="changeVideo(video)">{{video.title}}</a></li>
+        </ul>
+    </aside>
+    <footer>&copy; VIDEO SYSTEM. ALL RIGHTS RESERVED.</footer>
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

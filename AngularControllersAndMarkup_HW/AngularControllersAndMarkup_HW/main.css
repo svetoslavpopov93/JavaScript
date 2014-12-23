@@ -1,0 +1,151 @@
+﻿html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    background-color: #89A7B9;
+}
+
+header {
+    padding: 10px;
+    background: #5ee;
+    text-align: center;
+    background-color: #2B485D;
+}
+
+section {
+    min-height: 500px;
+    width: 870px;
+    background-color: blue;
+    padding: 10px;
+    padding-bottom: 80px; /* Height of the footer element */
+    display: inline-block;
+    float: left;
+    margin: 100px;
+    margin-right: 50px;
+    text-align: center;
+    background-color: #294F79;
+    border-radius: 5px;
+}
+
+    section img {
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 5px;
+    }
+
+    section > div > span {
+        display: inline-block;
+        float: left;
+        font-family: Consolas;
+    }
+
+    section div .span_length {
+        float: left;
+        margin-left: 184px;
+        max-width: 45px;
+        min-width: 45px;
+        text-align: right;
+        display: inline-block;
+    }
+
+    section div .span_category {
+        margin-left: 15px;
+        max-width: 268px;
+        width: 240px;
+        text-align: left;
+    }
+
+    section div .span_subscribers {
+        max-width: 165px;
+width: 165px;
+text-align: left;
+    }
+
+    section div .a_subs {
+        float: left;
+    }
+
+    section .comments_container{
+        margin-top: 50px;
+    }
+
+    section div ul {
+        clear: both;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    section div ul li{
+        background-color: #2F4E65;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+
+    section div ul li div a {
+        color: #8AA9BA;
+    }
+
+aside {
+    background-color: red;
+    width: 300px;
+    min-height: 200px;
+    display: inline-block;
+    float: right;
+    margin: 100px;
+    margin-left: 50px;
+    background-color: #294F79;
+    border-radius: 5px;
+}
+
+    aside ul {
+        list-style-type: none;
+        padding: 5px;
+        margin: 0;
+    }
+
+        aside ul li {
+            margin-top: 10px;
+        }
+
+            aside ul li a {
+                text-decoration: none;
+                text-align: center;
+                color: #8AA9BA;
+                background-color: #294F79;
+                text-decoration: none;
+                display: block;
+                padding-left: 5px;
+                border-radius: 3px;
+            }
+
+                aside ul li a:hover {
+                    color: #294F79;
+                    background-color: #8AA9BA;
+                }
+
+footer {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    background-color: #2B485D;
+    display: block;
+}
+
+.enabledLink {
+    color: white;
+    text-decoration: none;
+}
+
+.disabledLink {
+    color: gray;
+}

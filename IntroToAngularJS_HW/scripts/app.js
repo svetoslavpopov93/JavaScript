@@ -1,10 +1,4 @@
-﻿(function () {
-    
-    
-}());
-
-function UserController($scope) {
-    var imgPath = "SoftUni-Logo.png";
+﻿function UserController($scope) {
     var user = {
         name: "Pesho",
         photo: "http://www.nakov.com/wp-content/uploads/2014/05/",
@@ -14,7 +8,6 @@ function UserController($scope) {
     }
 
     $scope.user = user;
-    $scope.imgPath = imgPath;
 }
 
 function TigerController($scope) {

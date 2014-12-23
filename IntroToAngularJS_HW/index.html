@@ -6,9 +6,9 @@
 <body data-ng-app>
     <h1>Problem 1</h1>
     <div id="user_box" data-ng-controller="UserController">
-        <label>Type "SoftUni-Logo.png" and see the results</label>
+        <label>Type image URL and see the results</label>
         <input type="text" ng-model="path"/>
-        <img ng-src="{{user.photo}}{{path}}" alt="Alternate Text" />
+        <img ng-src="{{path}}" alt="Image should apear here." />
     </div>
     <h1>Problem 2</h1>
     <div id="tiger_box" data-ng-controller="TigerController">
